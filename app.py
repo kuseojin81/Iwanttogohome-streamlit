@@ -9,7 +9,7 @@ creativity = st.slider("점수", 0, 100, 50)
 question = st.text_area("소감", placeholder="소감입니다.")
 if st.button("확인"): 
     st.markdown(f"({user_id})/({ai_model}학년)/({age})/({ai_speed})")
-    st.markdown(f"""(question)
+    st.markdown(f"""{question})
 
         
        
