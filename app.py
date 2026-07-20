@@ -7,7 +7,7 @@ age = st.number_input("반", min_value=1, max_value=100, value=1)
 ai_speed = st.select_slider("난이도",options=["매우 쉬움", "쉬움", "보통", "어려움", "매우 어려움"],value="보통")
 creativity = st.slider("점수", 0, 100, 50)
 question = st.text_area("소감", placeholder="소감입니다.")
-if st.button("질문 전송하기"):
+if st.button("확인"):
     if agree:
         st.success(f"성공적으로 전송되었습니다! ({user_id}님)")
         st.markdown(f"""
