@@ -23,7 +23,7 @@ with st.sidebar:
 st.header("👕 아이템 조합하기")
 col1, col2 = st.columns(2)
 with col1:
-    st.subheader("tkddml")
+    st.subheader("상의")
     top_type = st.radio("종류", ["후드티", "셔츠", "맨투맨", "반팔 티셔츠"], key="top_type")
     top_color = st.select_slider("색상 톤", options=["밝음", "무난함", "어두움"], key="top_color")
     with col2:
@@ -51,7 +51,7 @@ if st.button("코디 완성하기"):
         st.write(f"오늘 같은 **{weather}** 날씨에는 이렇게 입어보세요!")
         st.markdown(f"""
         * **상의:** {top_color} {top_type}
-        * **하의:**{bottom_color} {bottom_type}
+        * **하의:** {bottom_color} {bottom_type}
         * **매칭:** {shoes}와 {', '.join(acc) if acc else '악세서리 없이 깔끔하게!'}""")
         st.success("오늘의 스타일링이 완성되었습니다! 자신있게 외출하세요!")
 
