@@ -8,8 +8,7 @@ ai_speed = st.select_slider("난이도",options=["매우 쉬움", "쉬움", "보
 creativity = st.slider("점수", 0, 100, 50)
 question = st.text_area("소감", placeholder="소감입니다.")
 if st.button("확인"):
-      if agree:
-        st.success(f"(user_id)/{(ai_model)학년}/{(age)}")
+     
 
 st.header("2. 챗봇 설정")
 ai_model = st.radio("사용할 AI 모델을 선택하세요", ["GPT-4", "Claude 3", "Gemini Pro"], horizontal=True)
