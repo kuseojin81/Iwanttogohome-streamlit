@@ -59,7 +59,7 @@ with st.expander("코디 연출 팁영상 보기"):
     st.video("https://www.youtube.com/watch?v=1kMZ8ytly1k")
     st.write("전문가가 제안하는코디 연출법을 참고해 보세요.") 
 
-st.button("전체 초기화", on_click-reset_all)
+st.button("전체 초기화", on_click=reset_all)
         
             
     
