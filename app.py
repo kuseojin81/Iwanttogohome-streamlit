@@ -1,12 +1,15 @@
 import streamlit as st
 
-st.markdown("# AI 챗봇 만들기")
-st.markdown("---")
-st.markdown("## 질문을 하시면 AI 친구가 응답합니다.")
-st.header("1. 기본 정보 입력")
-user_id = st.text_input("아이디(ID)를 입력하세요", placeholder="example_user")
-age = st.number_input("나이를 입력하세요", min_value=1, max_value=100, value=17)
-question = st.text_area("AI에게 보낼 질문을 입력하세요", placeholder="여기에 질문을 작성해 주세요.")
+st.markdown("# 앱 UI 만들기")
+user_id = st.text_input("이름", placeholder="example_user")
+ai_model = st.radio("나이", ["1", "2", "3"], horizontal=True)
+age = st.number_input("반", min_value=1, max_value=100, value=1)
+ai_speed = st.select_slider("난이도",options=["매우 쉬움", "쉬움", "보통", "어려움", "매우 어려움"],value="보통")
+creativity = st.slider("점수", 0, 100, 50)
+question = st.text_area("소감", placeholder="소감입니다.")
+if st.button("확인"):
+      if agree:
+        st.success(f"(user_id)/{(나이)학년}/{(반)}")
 
 st.header("2. 챗봇 설정")
 ai_model = st.radio("사용할 AI 모델을 선택하세요", ["GPT-4", "Claude 3", "Gemini Pro"], horizontal=True)
